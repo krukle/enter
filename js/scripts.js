@@ -60,7 +60,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   emailName.addEventListener('keypress', (e) => {
     if (e.key === 'Enter' && !emailFormIsValid()) e.preventDefault()
-    if (e.key === 'Enter' && emailFormIsValid()) return
   })
 
   emailForm.addEventListener('input', () => {
@@ -72,13 +71,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
   })
 
   emailButton.addEventListener('click', () => {
+    const niceName = emailName.value.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase())
     window.open(
-      `mailto:info@enterprojektering.com?subject=Anbudsförfrågan&body=${emailTextArea.value}%0D%0A%0D%0AMed vänlig hälsning,%0D%0A${emailName.value}`
+      `mailto:info@enterprojektering.com?subject=Anbudsförfrågan&body=${emailTextArea.value}%0D%0A%0D%0AMed vänlig hälsning,%0D%0A${niceName}`
     )
   })
 
   document.addEventListener('keypress', (event) => {
-    if (event.key === 'Enter' && !(window.location.toString()).includes('#signup')) {
+    if (event.key === 'Enter' && !(window.location.toString()).includes('#signup') && emailName.value.length === 0 && emailTextArea.value.length === 0) {
       event.preventDefault()
       window.location = document.getElementById('nav-item-contact').href
     }
