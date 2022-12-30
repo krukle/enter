@@ -11531,7 +11531,7 @@ body {
   }
 }
 
-.signup-section {
+.email-section {
   padding: 0 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/stockholm-skyline-macpeper.jpg");
   background-position: center;
@@ -11539,7 +11539,7 @@ body {
   background-attachment: scroll;
   background-size: cover;
 }
-.signup-section .form-signup input {
+.email-section .form-email input {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   /* padding: 1.25rem 2rem; */
   height: 200px;
@@ -11600,7 +11600,7 @@ body {
   resize: none;
 }
 
-#signup-img-reference-container {
+#email-img-reference-container {
   display: flex;
   justify-content: right;
   width: 100%;
@@ -11608,7 +11608,7 @@ body {
   margin: 0;
 }
 
-#signup-img-reference {
+#email-img-reference {
   margin-left: auto;
   margin-right: 0;
   margin-top: 0;

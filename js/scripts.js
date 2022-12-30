@@ -78,7 +78,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   })
 
   document.addEventListener('keypress', (event) => {
-    if (event.key === 'Enter' && !(window.location.toString()).includes('#signup') && emailName.value.length === 0 && emailTextArea.value.length === 0) {
+    if (event.key === 'Enter' && !(window.location.toString()).includes('#email') && emailName.value.length === 0 && emailTextArea.value.length === 0) {
       event.preventDefault()
       window.location = document.getElementById('nav-item-contact').href
     }
