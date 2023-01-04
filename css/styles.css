@@ -74,11 +74,21 @@
   box-sizing: border-box;
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
   }
-} */
+}
+
+@media only screen and (max-width: 767px) {
+  @-moz-document url-prefix() {
+    /* Add your Firefox mobile-specific styles here */
+    :root {
+      scroll-behavior: auto;
+    }
+  }
+}
+
 
 body {
   margin: 0;
