@@ -54,7 +54,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   const emailTextArea = document.getElementById('email-textarea')
   const emailButton = document.getElementById('email-button')
 
-  const emailFormIsValid  = () => {
+  const emailFormIsValid = () => {
     return emailTextArea.value.length > 0 && emailName.value.length > 0
   }
 
@@ -71,14 +71,21 @@ window.addEventListener('DOMContentLoaded', (event) => {
   })
 
   emailButton.addEventListener('click', () => {
-    const niceName = emailName.value.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase())
+    const niceName = emailName.value.replace(/(^\w{1})|(\s+\w{1})/g, (letter) =>
+      letter.toUpperCase()
+    )
     window.open(
       `mailto:info@enterprojektering.com?subject=Anbudsförfrågan&body=${emailTextArea.value}%0D%0A%0D%0AMed vänlig hälsning,%0D%0A${niceName}`
     )
   })
 
   document.addEventListener('keypress', (event) => {
-    if (event.key === 'Enter' && !(window.location.toString()).includes('#email') && emailName.value.length === 0 && emailTextArea.value.length === 0) {
+    if (
+      event.key === 'Enter' &&
+      !window.location.toString().includes('#email') &&
+      emailName.value.length === 0 &&
+      emailTextArea.value.length === 0
+    ) {
       event.preventDefault()
       window.location = document.getElementById('nav-item-contact').href
     }
