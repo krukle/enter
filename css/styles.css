@@ -11938,7 +11938,7 @@ body {
   }
 }
 
-.about-section {
+.vision-section {
   padding-top: 10rem;
   background: linear-gradient(
     to bottom,
@@ -11947,7 +11947,7 @@ body {
     rgba(0, 0, 0, 0.8) 100%
   );
 }
-.about-section p {
+.vision-section p {
   margin-bottom: 5rem;
 }
 
