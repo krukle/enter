@@ -11798,7 +11798,7 @@ body {
 #mainNav {
   min-height: 3.5rem;
   background-color: #fff;
-  max-height: 6.5rem;
+  max-height: 15rem;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -11878,23 +11878,26 @@ body {
   }
 }
 
-#mainNav-container {
-  height: 3.675rem;
-}
 #mainNav-container .navbar-brand {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
 #mainNav-container .navbar-brand img {
-  height: 100%;
-  width: auto;
-  object-fit: contain;
+  height: 3.675rem;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 992px) {
-  #mainNav-container {
+  #mainNav-container .navbar-brand {
+    margin: 0;
+    padding: 0;
+  }
+
+  #mainNav-container .navbar-brand img {
     height: 4.5rem;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -11984,18 +11987,15 @@ body {
   margin-bottom: 5rem;
 }
 
-.services-section, .about-section {
+.services-section,
+.about-section {
   padding: 10rem 0;
 }
-.services-section .featured-text, .about-section .featured-text {
+.services-section .featured-text,
+.about-section .featured-text {
   padding: 2rem;
 }
 @media (min-width: 992px) {
-  /* .services-section .featured-text, .about-section .featured-text {
-    padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
-  } */
-
   #johanna {
     padding: 0 2rem 0 2rem;
     border-left: 0.5rem solid #64a19d;
@@ -12037,13 +12037,11 @@ body {
 }
 .email-section .form-email input {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  /* padding: 1.25rem 2rem; */
   height: 200px;
   font-family: 'Varela Round', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 80%;
-  /* text-transform: uppercase; */
   letter-spacing: 0.15rem;
   border: 0;
 }
