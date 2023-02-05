@@ -12116,3 +12116,24 @@ body {
   font-size: 0.6rem;
   text-decoration: none;
 }
+
+.partner-div {
+  flex: 0 0 auto;
+  width: 16.66666667%;
+  margin-bottom: 0;
+  align-items: center;
+  display: flex;
+}
+
+.partner-div img {
+  filter: grayscale(100%) invert(100%);
+}
+
+#trygghansa-logo {
+  filter: grayscale(100%);
+}
+
+#xlbygg-logo,
+#fortnox-logo {
+  filter: brightness(0) invert(1);
+}
