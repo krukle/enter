@@ -11951,16 +11951,26 @@ body {
   margin-bottom: 5rem;
 }
 
-.services-section {
+.services-section, .about-section {
   padding: 10rem 0;
 }
-.services-section .featured-text {
+.services-section .featured-text, .about-section .featured-text {
   padding: 2rem;
 }
 @media (min-width: 992px) {
-  .services-section .featured-text {
+  /* .services-section .featured-text, .about-section .featured-text {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;
+  } */
+
+  #johanna {
+    padding: 0 2rem 0 2rem;
+    border-left: 0.5rem solid #64a19d;
+  }
+
+  #rodrigo {
+    padding: 0 2rem 0 2rem;
+    border-right: 0.5rem solid #64a19d;
   }
 }
 .services-section .project-text {
