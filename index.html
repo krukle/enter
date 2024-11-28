@@ -70,12 +70,17 @@
   </head>
 
   <body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      id="mainNav"
+      role="navigation"
+      aria-label="Main navigation"
+    >
       <div id="mainNav-container" class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#page-top"
-          ><img src="assets/img/enter-logo.png" alt="Enter Projektering logo"
-        /></a>
+        <a class="navbar-brand" href="#page-top" aria-label="Go to top of page">
+          <img src="assets/img/enter-logo.png" alt="Enter Projektering logo" />
+        </a>
         <button
           class="navbar-toggler navbar-toggler-right"
           type="button"
@@ -83,21 +88,30 @@
           data-bs-target="#navbarResponsive"
           aria-controls="navbarResponsive"
           aria-expanded="false"
-          aria-label="Toggle navigation"
+          aria-label="Toggle navigation menu"
         >
           Meny
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Om oss</a>
+          <ul class="navbar-nav ms-auto" role="menubar">
+            <li class="nav-item" role="none">
+              <a class="nav-link" href="#about" tabindex="0" role="menuitem"
+                >Om oss</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Våra tjänster</a>
+            <li class="nav-item" role="none">
+              <a class="nav-link" href="#services" tabindex="0" role="menuitem"
+                >Våra tjänster</a
+              >
             </li>
-            <li class="nav-item">
-              <a id="nav-item-contact" class="nav-link" href="#email"
+            <li class="nav-item" role="none">
+              <a
+                id="nav-item-contact"
+                class="nav-link"
+                href="#email"
+                tabindex="0"
+                role="menuitem"
                 >Kontakt</a
               >
             </li>
@@ -147,7 +161,12 @@
       <div class="bg-light p-5"></div>
 
       <!-- About-->
-      <section class="about-section bg-light pt-0" id="about">
+      <section
+        class="about-section bg-light pt-0"
+        id="about"
+        tabindex="0"
+        aria-labelledby="about-heading"
+      >
         <div class="container px-4 px-lg-5">
           <!-- About One Row -->
           <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
@@ -160,7 +179,7 @@
             </div>
             <div class="col-xl-4 col-lg-5">
               <div class="featured-text text-center text-lg-end" id="rodrigo">
-                <h4>Rodrigo Ramos</h4>
+                <h3>Rodrigo Ramos</h3>
                 <p class="text-black-50 mb-0">
                   Jag är grundare och ägare av ENTER projektering AB med 17 års
                   erfarenhet inom bygg- och projekteringsbranschen. Jag erbjuder
@@ -179,7 +198,7 @@
           <div class="row gx-0 align-items-center flex-wrap-reverse">
             <div class="col-xl-4 col-lg-5">
               <div class="featured-text text-center text-lg-start" id="johanna">
-                <h4 class="">Johanna Eid</h4>
+                <h3 class="">Johanna Eid</h3>
                 <p class="text-black-50 mb-0">
                   Jag är delägare i ENTER. Mitt främsta fokus är att säkerställa
                   en trygg och bekväm ekonomisk resa för dig som kund under ditt
@@ -205,7 +224,12 @@
       </section>
 
       <!-- Services-->
-      <section class="services-section bg-light pt-0" id="services">
+      <section
+        class="services-section bg-light pt-0"
+        id="services"
+        tabindex="0"
+        aria-labelledby="services-heading"
+      >
         <div class="container px-4 px-lg-5">
           <!-- Service One Row-->
           <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
@@ -222,7 +246,7 @@
                   <div
                     class="project-text w-100 my-auto text-center text-lg-right"
                   >
-                    <h4 class="text-white">Projektering</h4>
+                    <h3 class="text-white">Projektering</h3>
                     <p class="mb-0 text-white-50">
                       Vi bistår med hjälp när det kommer till projektering kring
                       bygglovshandlingar, konstruktionsritningar, dialogen med
@@ -252,7 +276,7 @@
                   <div
                     class="project-text w-100 my-auto text-center text-lg-left"
                   >
-                    <h4 class="text-white">Totalentreprenad</h4>
+                    <h3 class="text-white">Totalentreprenad</h3>
                     <p class="mb-0 text-white-50">
                       Vi tar ansvar för er totala entreprenad och projekterar
                       från initial kontakt till färdigt projekt.
@@ -275,7 +299,7 @@
                   <div
                     class="project-text w-100 my-auto text-center text-lg-right"
                   >
-                    <h4 class="text-white">Tak</h4>
+                    <h3 class="text-white">Tak</h3>
                     <p class="mb-0 text-white-50">
                       Vi kan hjälpa er med att renovera, byta ut eller lägga
                       nytt tak. I denna process är vi givetvis med från
@@ -301,7 +325,7 @@
                   <div
                     class="project-text w-100 my-auto text-center text-lg-left"
                   >
-                    <h4 class="text-white">Fasad</h4>
+                    <h3 class="text-white">Fasad</h3>
                     <p class="mb-0 text-white-50">
                       Vi har den spetskompetens inom fasadrenovering som krävs
                       för kompletta och kundanpassade helhetslösningar, som
@@ -331,7 +355,7 @@
                   <div
                     class="project-text w-100 my-auto text-center text-lg-right"
                   >
-                    <h4 class="text-white">Renoveringar</h4>
+                    <h3 class="text-white">Renoveringar</h3>
                     <p class="mb-0 text-white-50">
                       Vi utför kompletta ROT-arbeten för lägenheter och hus.
                       Detta involverar såväl större projekt som badrum, kök,
@@ -363,27 +387,36 @@
           <div class="row gx-4 gx-lg-5">
             <div class="col-md-10 col-lg-8 mx-auto text-center">
               <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-              <h2 class="text-white mb-5">Anbudsförfrågan</h2>
-              <form id="email-form">
+              <h2 id="email-form-heading" class="text-white mb-5">
+                Anbudsförfrågan
+              </h2>
+              <form
+                id="email-form"
+                role="form"
+                aria-labelledby="email-form-heading"
+              >
                 <div class="form-floating mb-3">
                   <input
                     class="form-control"
                     id="email-name"
                     type="text"
                     placeholder="Name"
-                    autocomplete="off"
-                  /><label for="name">Ditt namn</label>
+                    aria-required="true"
+                  />
+                  <label for="email-name" class="form-label">Ditt namn</label>
                 </div>
                 <div class="form-floating mb-3">
                   <textarea
-                    autocomplete="off"
+                    id="email-textarea"
                     class="form-control"
                     id="email-textarea"
-                    type="text"
                     placeholder="Message"
+                    aria-required="true"
                     style="height: 10rem"
                   ></textarea>
-                  <label for="message">Din anbudsförfrågan</label>
+                  <label for="email-textarea" class="form-label"
+                    >Din anbudsförfrågan</label
+                  >
                   <div class="invalid-feedback">Skriv en anbudsförfrågan.</div>
                 </div>
                 <div class="d-none" id="submitSuccessMessage">
@@ -420,7 +453,7 @@
               <div class="card py-4 h-100">
                 <div class="card-body text-center">
                   <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                  <h4 class="text-uppercase m-0">Adress</h4>
+                  <h3 class="text-uppercase m-0">Adress</h3>
                   <hr class="my-4 mx-auto" />
                   <div class="small text-black-50">
                     <a
@@ -436,7 +469,7 @@
               <div class="card py-4 h-100">
                 <div class="card-body text-center">
                   <i class="fas fa-envelope text-primary mb-2"></i>
-                  <h4 class="text-uppercase m-0">E-post</h4>
+                  <h3 class="text-uppercase m-0">E-post</h3>
                   <hr class="my-4 mx-auto" />
                   <div class="small text-black-50">
                     <a href="mailto:info@enterprojektering.com"
@@ -450,7 +483,7 @@
               <div class="card py-4 h-100">
                 <div class="card-body text-center">
                   <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                  <h4 class="text-uppercase m-0">Telefon</h4>
+                  <h3 class="text-uppercase m-0">Telefon</h3>
                   <hr class="my-4 mx-auto" />
                   <div class="small text-black-50">
                     <a href="tel:+46766077444">076-607 74 44</a>
@@ -465,7 +498,7 @@
       <!-- Partners -->
       <section class="partners-section bg-black">
         <div class="container px-4 px-lg-5 text-center">
-          <h4 class="text-white pt-5">Våra partners</h4>
+          <h3 class="text-white pt-5">Våra partners</h3>
           <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="partner-div">
               <a target="_blank" href="https://www.trygghansa.se/"
